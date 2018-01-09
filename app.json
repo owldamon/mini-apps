@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/calendar/calendar",
+    "pages/report/report",
+    "pages/salesReport/salesReport",
+    "pages/material/material",
+    "pages/activityReport/activityReport",
+    "pages/stepOut/stepOut",
+    "pages/checkReport/checkReport"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff7300",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "我也不知道叫什么",
+    "backgroundColor": "#efeff4"
+  },
+  "debug": true
+}

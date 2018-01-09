@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "foot": "../common/foot/foot",
+        "home": "../common/home/home",
+        "hall": "../common/hall/hall",
+        "message": "../common/message/message",
+        "mission": "../common/mission/mission"
+    }
+}

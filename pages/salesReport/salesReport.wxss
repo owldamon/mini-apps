@@ -1,0 +1,53 @@
+/* pages/salesReport/salesReport.wxss */
+.main .section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 140rpx;
+    background: #FFF;
+    border-bottom: 1rpx solid #efeff4;
+    padding: 0 22rpx;
+}
+.main .section picker {
+    width: 100%;
+}
+.section .name{
+    font-size: 34rpx;
+}
+.section .name text {
+    vertical-align: middle;
+    color: #ff7300;
+}
+.section .content {
+    padding-left: 20rpx;
+    width: 69%;
+    text-align: left;
+}
+.main .section image {
+    width: 16rpx;
+    height: 26rpx;
+}
+.picker {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.section input {
+    padding-left: 20rpx;
+    width: 70%;
+}
+.input-hold {
+    font-size: 32rpx;
+}
+.main .textarea {
+    margin-top: 10rpx;
+    min-height: 170rpx; 
+}
+.main .textarea textarea {
+    width: 100%;
+    height: 170rpx; 
+}
+.main .img {
+    padding-right: 40rpx;
+    justify-content: space-between;
+}

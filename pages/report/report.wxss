@@ -1,0 +1,29 @@
+/* pages/report/report.wxss */
+.nav-list {
+    display: flex;
+    padding: 0 22rpx;
+    height: 140rpx;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    border-bottom: 1px solid #efeff4;
+}
+.nav-list:nth-last-child(1) {
+    margin-top: 10rpx;
+}
+.nav-list .logo {
+    border-radius:5rpx;
+    width:100rpx;
+    height:100rpx;   
+}
+.nav-list .name {
+    width: 75%;
+}
+.nav-list .name text {
+    font-size: 34rpx;
+}
+.nav-list .icon {
+    margin-right: 30rpx;
+    width: 16rpx;
+    height: 26rpx;
+}

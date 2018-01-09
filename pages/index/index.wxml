@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<hall wx:if="{{activeNav == 0}}"></hall>
+<mission wx:elif="{{activeNav == 1}}"></mission>
+<message wx:elif="{{activeNav == 2}}"></message>
+<home wx:elif="{{activeNav == 3}}"></home>
+<foot class="foot" bindchangeNav="changeNav"></foot>

@@ -1,0 +1,14 @@
+/* pages/common/foot.wxss */
+
+.nav-list {
+    width: 25%;
+    text-align: center;
+}
+.nav-list image {
+    width: 55rpx;
+    height: 55rpx;
+}
+.nav-list text {
+    display: block;
+    font-size: 20rpx;
+}

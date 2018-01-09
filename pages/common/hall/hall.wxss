@@ -1,0 +1,128 @@
+/* pages/common/hall/hall.wxss */
+.hall {
+	height: 100%;
+  background:#efeff4;
+}
+.hall .header {
+  padding-top: 20rpx; 
+  text-align: center;
+  height: 260rpx;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff7300), to(#ffbc00));
+}
+
+.hall .header .location-name image {
+  width: 40rpx;
+  height: 48rpx;
+  vertical-align: middle;
+}
+.hall .header .location-name text {
+  padding-left: 20rpx; 
+  font-size: 36rpx;
+  color: #FFF;
+}
+.hall .header .search {
+  margin: 35rpx auto;
+  position: relative;
+  background:#fff;
+  border-radius:100rpx;
+  width:650rpx;
+  height:70rpx;
+}
+.hall .header .search .search-icon {
+  position: absolute;
+  left: 170rpx;
+  top: 22rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+.hall .header .search input {
+  height: 100%;
+  font-size: 32rpx;
+}
+.search-place {
+  font-size:28rpx;
+  color:#999;
+  text-align:center;
+}
+.condition {
+  display: flex;
+  justify-content: space-between;
+}
+.condition-list {
+  width: 33%;
+  line-height: 28rpx;
+} 
+.condition-list + .condition-list {
+  border-left: 1px solid #FFF;
+} 
+.condition-list image {
+  width: 20rpx;
+  height: 13rpx;
+  vertical-align: middle;
+} 
+.condition-list text {
+  margin-right: 10rpx;
+  font-size:28rpx;
+  color:#ffffff;
+  letter-spacing:0.42rpx;
+  text-align:center;
+} 
+.main {
+  padding-bottom: 98rpx;
+  min-height: 800rpx;
+  background: #efeff4;
+}
+.mission-list {
+  position: relative;
+  margin: 30rpx auto;
+  width: 706rpx;
+  height: 268rpx;
+  overflow: hidden;
+}
+.mission-list image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius:5rpx;
+  width:290rpx;
+  height:185rpx;
+}
+.mission-content {
+  position: absolute;
+  right: 0;
+  bottom: 4rpx;
+  background:#ffffff;
+  border-radius:5rpx;
+  width:676rpx;
+	height:239rpx;
+	box-shadow:0 4rpx 6rpx 0 rgba(0,0,0,.1);
+}
+.mission-head {
+	margin-top: 10rpx;
+  padding-left: 280rpx; 
+  padding-right: 10rpx;
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 32rpx;
+}
+.mission-time{
+	font-size: 20rpx;
+	color: #b6b6b6;
+}
+.mission-price {
+  display: block;
+	margin: 16rpx 0;
+	padding-left: 280rpx; 
+	font-size: 32rpx;
+	color:#f76b1c;
+}
+.mission-info {
+	margin-top: 30rpx;
+	font-size: 24rpx;
+	text-align: center;
+}
+.mission-add {
+	font-size: 28rpx;
+  padding-left: 280rpx; 
+}

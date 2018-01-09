@@ -1,0 +1,80 @@
+/* pages/common/mission/mission.wxss */
+
+.mission .header {
+    padding: 22rpx;
+    height: 260rpx;
+    color: #FFF;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff7300), to(#ffbc00));
+}
+.mission-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mission-date text:nth-child(1) {
+    font-size: 60rpx;
+}
+.mission-date text:nth-child(2) { 
+    font-size: 32rpx
+}
+.mission-name {
+    margin: 10rpx;
+}
+.main {
+  padding-top: 10rpx;
+  min-height: 800rpx;
+  background: #efeff4;
+}
+.duty-list {
+    display: flex;
+    height: 140rpx;
+    padding: 0 22rpx;
+    align-items: center;
+    background: #FFF;
+    border-bottom: 1rpx solid #efeff4;
+}
+.duty-list image {
+    border-radius:5rpx;
+    width:100rpx;
+    height:100rpx;   
+}
+.duty-info {
+    padding-left: 20rpx;
+    width: 60%;
+}
+.duty-info text:nth-child(1){
+    display: block;
+    font-size: 34rpx
+}
+.duty-info text:nth-child(2){
+    font-size:26rpx;
+    color:#888888;
+}
+.duty-state {
+    padding: 10rpx 28rpx;
+    font-size: 28rpx;
+    background: -webkit-gradient(linear, 0 0, right 0, from(#ff7300), to(#ffbc00));   
+    border-radius:5px;
+    color: #FFF;
+}
+.duty-list .on {
+    background: #d8d8d8;
+    color: #888;
+}
+.mission .report {
+    margin-top: 10rpx;
+    display: flex;
+    align-items: center;
+    padding: 20rpx 22rpx;
+    background: #FFF;
+    border-bottom: 1rpx solid #efeff4;
+}
+.mission .report image {
+    border-radius:5rpx;
+    width:100rpx;
+    height:100rpx;   
+}
+.mission .report text {
+    padding-left: 22rpx;
+    font-size: 34rpx;
+}

@@ -1,0 +1,92 @@
+<!--pages/common/hall/hall.wxml-->
+<view class="hall">
+    <view class="header">
+        <view class="location-name">
+            <image src="/images/icon/icon-location.png" />
+            <text>{{location}}</text>
+        </view>
+        <view class="search">
+            <image wx:if="{{notInput}}" class="search-icon" src="/images/icon/icon-search.png" />
+            <input bindinput="searchInput" type="text" placeholder="请输入公司 / 活动" placeholder-class="search-place" />
+        </view>
+        <view class="condition">
+            <view class="condition-list">
+                <text>距离排序</text>
+                <image src="/images/icon/icon-triangle.png" />
+            </view>
+             <view class="condition-list">
+                <text>时间排序</text>
+                <image src="/images/icon/icon-triangle.png" />
+            </view>
+             <view class="condition-list">
+                <text>筛选</text>
+                <image style="width:16rpx;height:20rpx;" src="/images/icon/icon-screen.png" />
+            </view>
+        </view>
+    </view>
+    <view class="main">
+        <view class="mission-list">
+            <view class="mission-content">
+                <view class="mission-head">
+                    <text class="mission-title">京东中秋活动促销员</text>
+                    <text class="mission-time">11.29</text>    
+                </view>
+                <text class="mission-add">广州塔 12.02-12.05</text>
+                <text class="mission-price">200k/day</text>
+                <view class="mission-info">
+                    <text>广东圣火公司</text> | 
+                    <text class="more">要求：女、18-28岁、身高165cm以上...</text>
+                </view>
+            </view>
+            <image src="/images/mission-list.png" />
+        </view>
+        <view class="mission-list">
+            <view class="mission-content">
+                <view class="mission-head">
+                    <text class="mission-title">京东中秋活动促销员</text>
+                    <text class="mission-time">11.29</text>    
+                </view>
+                <text class="mission-add">广州塔 12.02-12.05</text>
+                <text class="mission-price">200k/day</text>
+                <view class="mission-info">
+                    <text>广东圣火公司</text> 
+                    | 
+                    <text class="more">要求：女、18-28岁、身高165cm以上...</text>
+                </view>
+            </view>
+            <image src="/images/mission-list.png" />
+        </view>
+        <view class="mission-list">
+            <view class="mission-content">
+                <view class="mission-head">
+                    <text class="mission-title">京东中秋活动促销员</text>
+                    <text class="mission-time">11.29</text>    
+                </view>
+                <text class="mission-add">广州塔 12.02-12.05</text>
+                <text class="mission-price">200k/day</text>
+                <view class="mission-info">
+                    <text>广东圣火公司</text> 
+                    | 
+                    <text class="more">要求：女、18-28岁、身高165cm以上...</text>
+                </view>
+            </view>
+            <image src="/images/mission-list.png" />
+        </view>
+        <view class="mission-list">
+            <view class="mission-content">
+                <view class="mission-head">
+                    <text class="mission-title">京东中秋活动促销员</text>
+                    <text class="mission-time">11.29</text>    
+                </view>
+                <text class="mission-add">广州塔 12.02-12.05</text>
+                <text class="mission-price">200k/day</text>
+                <view class="mission-info">
+                    <text>广东圣火公司</text> 
+                    | 
+                    <text class="more">要求：女、18-28岁、身高165cm以上...</text>
+                </view>
+            </view>
+            <image src="/images/mission-list.png" />
+        </view>
+    </view>
+</view>

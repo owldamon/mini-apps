@@ -1,0 +1,8 @@
+<!--pages/common/foot.wxml-->
+<view class="foot">
+	<view id="{{index}}" class="nav-list" wx:key="{{index}}" bindtap="navToByIndex" wx:for="{{navList}}">
+		<image wx:if="{{item.isActive}}" src="{{item.activeImgUrl}}" />
+		<image wx:else src="{{item.imgUrl}}" />
+		<text>{{item.name}}</text>
+	</view>
+</view>

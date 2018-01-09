@@ -1,0 +1,41 @@
+<view class="flex box box-tb box-align-center">
+    <view class="calendar box box-tb">
+        <view class="top-handle fs28 box box-lr box-align-center box-pack-between">
+            <view class="date-area box box-lr box-align-center">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+            <view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+                <view class="prev-handle box box-lr box-align-center box-pack-center"> 
+                    <image src="/images/icon/icon-right.png" />
+                </view>
+            </view>
+            <view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+                <view class="next-handle box box-lr box-align-center box-pack-center">      
+                    <image  src="/images/icon/icon-right.png" />
+                </view>
+            </view>
+        </view>
+        <view class="weeks box box-lr box-pack-center box-align-center">
+            <view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+        </view>
+        <view class="days box box-lr box-wrap">
+            <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+            </view>
+            <view class="grid white-color box box-align-center box-pack-center" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="tapDayItem">
+                <view class="day {{item.choosed ? 'border-radius pink-bg' : ''}} box box-align-center box-pack-center">{{item.day}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="duty-info">
+    <view class="info-list">
+        <text>出勤天数</text>
+        <text>3天</text>
+    </view>
+    <view class="info-list">
+        <text>工作时长</text>
+        <text>6小时</text>
+    </view>
+    <view class="info-list">
+        <text>旷工</text>
+        <text>0次</text>
+    </view>
+</view>
