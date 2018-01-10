@@ -9,6 +9,23 @@ App({
     // 登录
     wx.login({
       success: res => {
+        console.log(this.globalData.devUrl, res.code)
+        let code =  res.code
+        wx.request({
+          url: this.globalData.devUrl + '/api/user/login',
+          method: 'POST',
+          header: {'Content-Type': 'application/x-www-form-urlencoded'},  
+          data: {
+            code: code
+          },
+          dataType: 'json',
+          success(data) {
+            console.log(data)
+          },
+          fail(error) {
+            console.log(error)
+          }
+        })
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -35,5 +52,6 @@ App({
   },
   globalData: {
     userInfo: null,
+    devUrl: 'http://192.168.0.17:8080/CP'
   }
 })

@@ -8,7 +8,8 @@
     "pages/material/material",
     "pages/activityReport/activityReport",
     "pages/stepOut/stepOut",
-    "pages/checkReport/checkReport"
+    "pages/checkReport/checkReport",
+    "pages/taskDetail/taskDetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff7300",

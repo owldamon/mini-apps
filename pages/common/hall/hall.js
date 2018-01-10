@@ -12,7 +12,27 @@ Component({
    */
   data: {
     location: '广州',
-    notInput: true
+    notInput: true,
+    missionList: [
+      {
+        title: '京东中秋活动促销员',
+        creatDate: '11.29',
+        address: '广州塔',
+        period: '12.02-12.05',
+        price: '200k/day',
+        company: '广东圣火公司',
+        require: '要求：女、18-28岁、身高165cm以上...',
+      },
+      {
+        title: '京东中秋活动促销员',
+        creatDate: '11.29',
+        address: '广州塔',
+        period: '12.02-12.05',
+        price: '200k/day',
+        company: '广东圣火公司',
+        require: '要求：女、18-28岁、身高165cm以上...',
+      }
+    ]
   },
 
   /**
@@ -23,6 +43,11 @@ Component({
       this.setData({
         notInput: !event.detail.value
       });
+    },
+    goDetail(event) {
+      wx.navigateTo({
+        url: '/pages/taskDetail/taskDetail?id=' + event.currentTarget.id
+      })
     }
   }
 })

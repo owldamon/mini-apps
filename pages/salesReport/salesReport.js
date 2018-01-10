@@ -6,6 +6,19 @@ Page({
    */
   data: {
     array: ['京东中秋活动', '京东中秋活动', '京东中秋活动', '京东中秋活动'],
+    userList: [
+      {
+        url: '/images/icon/icon-add.png',
+        imgName: '东方',
+        name: '钱东方'
+      },
+      {
+        url: '',
+        imgName: '特使',
+        name: '特使'
+      }
+    ]
+
   },
   bindDateChange(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -28,11 +41,21 @@ Page({
       }
     })
   },
+  submitTap(e) {
+    console.log(e)
+  },
+  addUser(e) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.setNavigationBarTitle(
+      {
+        title: '销售汇报'
+      }
+    )
   },
 
   /**
