@@ -45,12 +45,15 @@ Component({
   methods: {
     navToByIndex(event) {
       let id = event.currentTarget.id;
-      console.log(event);
-      return;
       this.renderNavState(id);
       let activeNavId = { // detail对象，提供给事件监听函数
         activeNavId: id
       };
+      wx.setNavigationBarTitle(
+        {
+          title: event.currentTarget.dataset.name
+        }
+      )
       this.triggerEvent('changeNav', activeNavId);
     },
     renderNavState(_index=0){

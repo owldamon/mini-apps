@@ -4,9 +4,9 @@
     <view class="generaInfo">
         <view class="mission-head">
             <text class="mission-title">{{title}}</text>
-            <text class="mission-time">{{creatDate}}</text> 
+            <text class="mission-time">{{createDate}}</text> 
         </view>
-        <text class="mission-add">{{address}} {{period}}</text>
+        <text class="mission-add">{{titleDisc}}</text>
         <text class="mission-price">{{price}}</text>
     </view>
     <view class="company">
@@ -26,9 +26,7 @@
                 工作职责:
             </view>
             <view class="content-text">
-                1.具体要求内容很长很长很长很长很长很长长
-                2.具体要求内容很长很长很长很长很长很长长
-                3.具体要求内容很长很长很长很长很长很长长
+                {{taskDisc}}
             </view>
         </view>
     </view>
@@ -38,8 +36,8 @@
             <text>工作地址</text>
         </view>
         <view class="content">
-            <view>
-                广东-广州-天河区 花城大道路环球都会68号32层a
+            <view class="taskAddress">
+                {{taskAddress}}
             </view>
             <image src="/images/icon/icon-right.png" />
         </view>
@@ -50,7 +48,7 @@
             <text>所需人数</text>
         </view>
         <view class="content">
-            <text class="content-num">此活动需要促销员20人督导一人</text>
+            <text class="content-num">{{taskDemand}}</text>
         </view>
     </view>
     <view class="bottom-btn">

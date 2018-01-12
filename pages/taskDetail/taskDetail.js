@@ -1,6 +1,9 @@
 // pages/taskdetail/taskdetail.js
-var app = getApp();
+const getCreateDate = require('../../utils/util').getCreateDate;
+const getFirstImg = require('../../utils/util').getFirstImg;
+const app = getApp();
 const devUrl = app.globalData.devUrl;
+const userInfo = wx.getStorageSync('userInfo');
 Page({
 
   /**
@@ -8,29 +11,67 @@ Page({
    */
   data: {
     imgUrl: '/images/mission-banner.png',
-    title: '京东中秋活动促销员',
-    creatDate: '11.29',
-    address: '广州塔',
-    period: '12.02-12.05',
-    price: '200k/day',
-    require: '要求：女、18-28岁、身高165cm以上...',
-    companyName: '广东圣火传媒股份公司',
+    title: '',
+    creatDate: '',
+    titleDisc: '',
+    period: '',
+    price: '',
+    taskAddress: '',
+    companyName: '',
     companyLogo: '/images/logo.png',
-    companyAddr: '珠江新城花城大道环球都会…'
+    companyAddr: '',
+    taskDisc: '',
+    taskDemand: ''
   },
-
+  getTaskDetail(id) {
+    wx.request({
+      url: devUrl + '/api/task/getTask',
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      data: {
+        taskId: id
+      },
+      dataType: 'json',
+      success: res => {
+        const info = res.data.resultData;
+        this.setData({
+          imgUrl: getFirstImg(info).imgs,
+          title: info.title,
+          createDate: getCreateDate(info).createDate,
+          titleDisc: info.titleDisc,
+          price: info.taskWages,
+          companyName: info.companyName,
+          companyLogo: info.companyIcon,
+          companyAddr: info.companyAddress,
+          taskAddress: info.taskAddress,
+          taskDisc: info.taskDisc,
+          taskDemand: info.taskDemand
+        })
+      },
+      fail: error=> {
+        console.log(error)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.setNavigationBarTitle(
+      {
+        title: '任务详情'
+      }
+    )
+    this.getTaskDetail(options.id);
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+   
   },
 
   /**

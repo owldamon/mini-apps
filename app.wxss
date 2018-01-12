@@ -12,7 +12,9 @@ page {
   box-sizing: border-box;
   font-family: PingFang-SC-Semibold;
 } 
-
+.customForm {
+  padding-top: 10rpx;
+}
 .customForm .section {
   display: flex;
   justify-content: left;
@@ -52,6 +54,7 @@ page {
 .customForm .section input {
   padding-left: 20rpx;
   width: 65%;
+  font-size: 28rpx;
 }
 .customForm .input-hold {
   font-size: 32rpx;
@@ -65,7 +68,6 @@ page {
   height: 170rpx; 
 }
 .customForm .img {
-  padding-right: 40rpx;
   justify-content: space-between;
 }
 .customForm .img .content {
@@ -127,6 +129,6 @@ page {
   text-align: center;
   height: 100rpx;
   line-height: 100rpx;
-  background: #ff7300;
-  color: #FFF;
+  background: #FFF;
+  color: #ff7300;
 }

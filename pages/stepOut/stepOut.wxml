@@ -68,24 +68,6 @@
         </view> 
         <image class="icon" src="/images/icon/icon-right.png" />
     </view>
-    <view class="user-report">
-        <view class="user-title">
-            <text>发个谁</text>
-            <text>(点击头像删除)</text>
-        </view>
-        <view class="user-list">
-            <view class="list" wx:key="index" wx:for="{{userList}}">
-                <image wx:if="{{item.url}}" src="{{item.url}}" />
-                <text class="imgName" wx:elif="{{!item.url}}" >{{item.imgName}}</text>
-                <text class="name">{{item.name}}</text>
-            </view>
-            <view class="list" bindtap="addUser">
-                <image src="/images/icon/icon-add.png" />
-                <text class="name">添加人员</text>
-            </view>
-        </view>
-        
-    </view>
     <view class="submit-btn" bindtap="submitTap">
         <text>确认提交</text>
     </view>

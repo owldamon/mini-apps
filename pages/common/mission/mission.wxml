@@ -20,7 +20,7 @@
                     <text>上班</text>
                     <text>打卡时间：14:00</text>
                 </view>
-                <text class="duty-state on">已打卡</text>
+                <text data-up="{{up}}" class="{{up.class}}" bindtap="clockIn">{{up.state}}</text>
             </view>
             <view class="duty-list">
                 <image src="/images/icon/icon-off-duty.png" />
@@ -28,7 +28,7 @@
                     <text>下班</text>
                     <text>未打卡</text>
                 </view>
-                <text class="duty-state">未打卡</text>
+                <text data-down="{{down}}" class="{{down.class}}" bindtap="clockIn">{{down.state}}</text>
             </view>
         </view>
         <view class="report" bindtap="goReport">

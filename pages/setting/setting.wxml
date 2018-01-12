@@ -1,0 +1,49 @@
+<!--pages/setting/setting.wxml-->
+<view class="customForm user-center">
+    <view class="section user-info" bindtap="goSetAvatar">
+        <view class="name">
+            头像 
+        </view> 
+        <view class="img">
+            <image class="user-avatar" src="/images/icon/icon-userpic.png" />
+            <image src="/images/icon/icon-right.png" />
+        </view>
+    </view>
+    <view class="section">
+        <view class="name">
+            姓名
+        </view> 
+        <input class="input" name="input" placeholder="请输入名字" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            联系电话 
+        </view> 
+        <input class="input" name="input" placeholder="请输入手机号" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                <view class="name">
+                    促销经验
+                </view>
+                <view class="img">
+                    {{array[index]}}
+                    <image src="/images/icon/icon-right.png" />
+                </view>
+            </view>
+        </picker>
+    </view>
+    <view class="section user-info" bindtap="goSetIdentityCard">
+        <view class="name">
+            身份认证 
+        </view> 
+        <view class="img">
+            <text>未实名</text>
+            <image src="/images/icon/icon-right.png" />
+        </view>
+    </view>
+    <view class="submit-btn" bindtap="submitTap">
+        <text>确认提交</text>
+    </view>
+</view>

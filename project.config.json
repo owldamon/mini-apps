@@ -25,13 +25,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
 					"name": "详情",
 					"pathName": "pages/taskDetail/taskDetail",
-					"query": ""
+					"query": "id=2bbcdb32709547faa6b449a9f8c77bb3"
 				},
 				{
 					"id": -1,
@@ -46,9 +46,15 @@
 					"query": ""
 				},
 				{
+					"id": 3,
+					"name": "个人信息",
+					"pathName": "pages/avatar/avatar",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "物料",
-					"pathName": "pages/material/material",
+					"name": "聊天",
+					"pathName": "pages/chatRoom/chatRoom",
 					"query": ""
 				}
 			]

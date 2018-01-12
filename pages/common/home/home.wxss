@@ -1,1 +1,65 @@
 /* pages/common/home/home.wxss */
+
+.home .header {
+    position: relative;
+    padding-top: 20rpx;
+    text-align: center;
+    height: 496rpx;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff7300), to(#ffbc00));
+}
+
+.home .avatar {
+    margin-bottom: 40rpx;
+    width: 260rpx;
+    height: 260rpx;
+    border-radius: 50%;
+}
+
+.home .setting {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 260rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.home .header text {
+    display: block;
+    color: #FFF;
+}
+.home .name {
+    font-size: 42rpx
+}
+.home .location {
+    font-size: 28rpx
+}
+.main {
+    padding-bottom: 98rpx;
+}
+.nav-list {
+    display: flex;
+    padding: 0 22rpx;
+    height: 140rpx;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    border-bottom: 1px solid #efeff4;
+}
+.nav-list .logo {
+    border-radius:5rpx;
+    width:100rpx;
+    height:100rpx;   
+}
+.nav-list .name {
+    width: 75%;
+}
+.nav-list .name text {
+    font-size: 34rpx;
+}
+.nav-list .icon {
+    margin-right: 30rpx;
+    width: 16rpx;
+    height: 26rpx;
+}

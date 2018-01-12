@@ -7,9 +7,9 @@
         </view>
         <view class="search">
             <image wx:if="{{notInput}}" class="search-icon" src="/images/icon/icon-search.png" />
-            <input bindinput="searchInput" type="text" placeholder="请输入公司 / 活动" placeholder-class="search-place" />
+            <input bindinput="searchInput" mode="activeTitle" type="text" placeholder="请输入公司 / 活动" placeholder-class="search-place" />
         </view>
-        <view class="condition">
+        <view class="condition" wx:if="{{isSort}}">
             <view class="condition-list">
                 <text>距离排序</text>
                 <image src="/images/icon/icon-triangle.png" />
@@ -25,20 +25,20 @@
         </view>
     </view>
     <view class="main">
-        <view id="{{index}}" class="mission-list" wx:key="index" bindtap="goDetail" wx:for="{{missionList}}">
+        <view id="{{item.id}}" class="mission-list" wx:key="index" bindtap="goDetail" wx:for="{{missionList}}">
             <view class="mission-content">
                 <view class="mission-head">
                     <text class="mission-title">{{item.title}}</text>
-                    <text class="mission-time">{{item.creatDate}}</text>    
+                    <text class="mission-time">{{item.createDate}}</text>    
                 </view>
-                <text class="mission-add">{{item.address}} {{item.period}}</text>
-                <text class="mission-price">{{item.price}}</text>
+                <text class="mission-add">{{item.taskDisc}}</text>
+                <text class="mission-price">{{item.taskWages}}</text>
                 <view class="mission-info">
-                    <text>{{item.company}}</text> | 
-                    <text class="more">{{item.require}}</text>
+                    <text>{{item.companyName}}</text> | 
+                    <text class="more">{{item.taskDemand}}</text>
                 </view>
             </view>
-            <image src="/images/mission-list.png" />
+            <image src="{{item.imgs}}" />
         </view>
     </view>
 </view>

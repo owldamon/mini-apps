@@ -1,4 +1,10 @@
 // pages/common/hall/hall.js
+const getCreateDate = require('../../../utils/util').getCreateDate;
+const getFirstImg = require('../../../utils/util').getFirstImg
+const app = getApp();
+const devUrl = app.globalData.devUrl;
+const userInfo = wx.getStorageSync('userInfo');
+
 Component({
   /**
    * 组件的属性列表
@@ -11,28 +17,13 @@ Component({
    * 组件的初始数据
    */
   data: {
-    location: '广州',
+    isSort: false,
+    location: '',
+    nowPage: 0,
+    useTime: 1, 
+    activeTitle: '',
     notInput: true,
-    missionList: [
-      {
-        title: '京东中秋活动促销员',
-        creatDate: '11.29',
-        address: '广州塔',
-        period: '12.02-12.05',
-        price: '200k/day',
-        company: '广东圣火公司',
-        require: '要求：女、18-28岁、身高165cm以上...',
-      },
-      {
-        title: '京东中秋活动促销员',
-        creatDate: '11.29',
-        address: '广州塔',
-        period: '12.02-12.05',
-        price: '200k/day',
-        company: '广东圣火公司',
-        require: '要求：女、18-28岁、身高165cm以上...',
-      }
-    ]
+    missionList: []
   },
 
   /**
@@ -48,6 +39,38 @@ Component({
       wx.navigateTo({
         url: '/pages/taskDetail/taskDetail?id=' + event.currentTarget.id
       })
+    },
+    getTaskLsit() {
+      wx.request({
+        url: devUrl + '/api/task/taskList',
+        method: 'POST',
+        header: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        data: {
+          page: this.data.nowPage,
+          title: this.data.activeTitle,
+          timeBy: this.data.useTime
+        },
+        dataType: 'json',
+        success: res => {
+          this.setData({
+            missionList : res.data.resultData.list.filter(getCreateDate).filter(getFirstImg)
+          })
+        },
+        fail: error=> {
+          console.log(error)
+        }
+      })
     }
+  },
+  /**
+   * 组件布局完成
+   */
+  ready(){
+    this.getTaskLsit();
+    this.setData({
+      location: this.dataset.location
+    })
   }
 })

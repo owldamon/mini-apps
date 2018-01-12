@@ -13,7 +13,17 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+const getCreateDate = value => {
+  value.createDate = value.createDate.split(' ')[0];
+  return value;
+}
+const getFirstImg = value => {
+  value.imgs = value.imgs.split(',')[0];
+  return value;
+}
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getCreateDate: getCreateDate,
+  getFirstImg: getFirstImg
 }

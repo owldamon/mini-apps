@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    activeNav: 0
+    activeNav: null,
+    location: ''
   },
   /**
    * 自定义函数
@@ -26,7 +27,25 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    const amapFile = require('../../utils/amap-wx');
+    const app = getApp();
+    const mapKey = app.globalData.mapKey;
+    var that = this;
+    var titleLocation = new amapFile.AMapWX({key:`${mapKey}`});
+    titleLocation.getRegeo({
+      success: function(data){
+        //成功回调
+        that.setData({
+          activeNav: 0,
+          location: data[0].regeocodeData.addressComponent.city
+        })
+        wx.setStorageSync('locationCity', data[0].regeocodeData.addressComponent.province + data[0].regeocodeData.addressComponent.city);
+      },
+      fail: function(info){
+        //失败回调
+        console.log(info)
+      }
+    })
   },
 
   /**
