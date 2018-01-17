@@ -112,8 +112,13 @@
     color: #FFF;
 }
 .bottom-btn .call-btn {
+<<<<<<< HEAD
     border-top: 1rpx solid #efeff4; 
     color:#f76b1c;
     width: 40%;
     background: #FFF;
+=======
+    color:#f76b1c;
+    width: 40%;
+>>>>>>> 1f16ec1df534b5f96ae4624d7cdef4eaedd6dcc5
 }

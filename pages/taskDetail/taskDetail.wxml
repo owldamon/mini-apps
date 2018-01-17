@@ -52,7 +52,11 @@
         </view>
     </view>
     <view class="bottom-btn">
+<<<<<<< HEAD
         <view class="apply-btm" bindtap="setApply">
+=======
+        <view class="apply-btm">
+>>>>>>> 1f16ec1df534b5f96ae4624d7cdef4eaedd6dcc5
             申请任务
         </view>
         <view class="call-btn">

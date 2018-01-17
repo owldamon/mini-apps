@@ -92,9 +92,13 @@ const updateLocalData = (userInfo,obj) => {
 module.exports = {
   formatTime: formatTime,
   getCreateDate: getCreateDate,
+<<<<<<< HEAD
   getFirstImg: getFirstImg,
   filterMoney: filterMoney,
   comPOST: comPOST,
   uploadImg: uploadImg,
   updateLocalData: updateLocalData
+=======
+  getFirstImg: getFirstImg
+>>>>>>> 1f16ec1df534b5f96ae4624d7cdef4eaedd6dcc5
 }
