@@ -831,11 +831,7 @@ connection.prototype.open = function (options) {
             success: suc || _utils.emptyfn,
             error: error || _utils.emptyfn
         };
-<<<<<<< HEAD
         // console.log("options", options.success)
-=======
-        console.log("options", options.success)
->>>>>>> 1f16ec1df534b5f96ae4624d7cdef4eaedd6dcc5
         _utils.ajax(options);
     }
 
