@@ -1,0 +1,16 @@
+<!--pages/earnings/earnings.wxml-->
+<view class="earn">
+    <view class="header">
+        <text class="money">{{money}}</text>
+        <text>余额账户（元）</text>
+    </view>
+    <view class="main">
+        <navigator class="nav-list" wx:key="index" wx:for="{{navList}}" url="{{item.url}}" open-type="navigate">
+            <image class="logo" src="{{item.icon}}" />
+            <view class="name">
+                <text>{{item.name}}</text>
+            </view>
+            <image class="icon" src="/images/icon/icon-right.png" />
+    </navigator>
+    </view>
+</view>

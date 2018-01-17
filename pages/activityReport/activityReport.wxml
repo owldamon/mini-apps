@@ -1,2 +1,64 @@
 <!--pages/activityReport/activityReport.wxml-->
-<text>pages/activityReport/activityReport.wxml</text>
+<view class="customForm">
+    <view class="section">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="picker">
+                <view class="name">
+                    汇报日期
+                    <text class="required">*</text> : 
+                </view>
+                <view class="content">
+                    {{date}}
+                </view>
+                <image src="/images/icon/icon-right.png" />
+            </view>
+        </picker>
+    </view>
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                <view class="name">
+                    销售活动
+                    <text class="required">*</text> :
+                </view>
+                <view class="content">
+                    {{array[index]}}
+                </view>
+                <image src="/images/icon/icon-right.png" />
+            </view>
+        </picker>
+    </view>
+    <view class="section">
+        <view class="name">
+            完成工作 <text class="required">*</text> : 
+        </view> 
+        <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            未成工作 <text class="required">*</text> : 
+        </view> 
+        <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            异常情况 <text>*</text> : 
+        </view> 
+        <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
+    </view>
+    <view class="section textarea">
+        <textarea auto-height placeholder="备注" placeholder-class="input-hold" />
+    </view>
+    <view class="section img" bindtap="chooseImage">
+        <view class="name">
+            图片
+        </view> 
+        <view class="content">
+            最多三张
+        </view> 
+        <image class="icon" src="/images/icon/icon-right.png" />
+    </view>
+    <view class="submit-btn" bindtap="submitTap">
+        <text>确认提交</text>
+    </view>
+</view>

@@ -1,11 +1,11 @@
 <!--pages/salesReport/salesReport.wxml-->
-<view class="main">
+<view class="customForm">
     <view class="section">
         <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
             <view class="picker">
                 <view class="name">
                     汇报日期
-                    <text>*</text> : 
+                    <text class="required">*</text> : 
                 </view>
                 <view class="content">
                     {{date}}
@@ -19,7 +19,7 @@
             <view class="picker">
                 <view class="name">
                     销售活动
-                    <text>*</text> :
+                    <text class="required">*</text> :
                 </view>
                 <view class="content">
                     {{array[index]}}
@@ -30,29 +30,59 @@
     </view>
     <view class="section">
         <view class="name">
-            完成工作 <text>*</text> : 
+            今日销售额 <text class="required">*</text> : 
         </view> 
         <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
     </view>
     <view class="section">
         <view class="name">
-            未成工作 <text>*</text> : 
+            现金收入 <text>*</text> : 
         </view> 
-        <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
+        <input class="input" name="cash" placeholder="请输入" placeholder-class="input-hold" />
     </view>
     <view class="section">
         <view class="name">
-            异常情况 <text>*</text> : 
+            微信收入 <text>*</text> : 
         </view> 
-        <input class="input" name="input" placeholder="请输入" placeholder-class="input-hold" />
+        <input class="input" name="wxpay" placeholder="请输入" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            支付宝收入 <text>*</text> : 
+        </view> 
+        <input class="input" name="alipay" placeholder="请输入" placeholder-class="input-hold" />
     </view>
     <view class="section textarea">
         <textarea auto-height placeholder="备注" placeholder-class="input-hold" />
     </view>
     <view class="section img" bindtap="chooseImage">
-        <view class="name ">
+        <view class="name">
             图片
         </view> 
+        <view class="content">
+            最多三张
+        </view> 
         <image class="icon" src="/images/icon/icon-right.png" />
+    </view>
+    <view class="user-report">
+        <view class="user-title">
+            <text>发个谁</text>
+            <text>(点击头像删除)</text>
+        </view>
+        <view class="user-list">
+            <view class="list" wx:key="index" wx:for="{{userList}}">
+                <image wx:if="{{item.url}}" src="{{item.url}}" />
+                <text class="imgName" wx:elif="{{!item.url}}" >{{item.imgName}}</text>
+                <text class="name">{{item.name}}</text>
+            </view>
+            <view class="list" bindtap="addUser">
+                <image src="/images/icon/icon-add.png" />
+                <text class="name">添加人员</text>
+            </view>
+        </view>
+        
+    </view>
+    <view class="submit-btn" bindtap="submitTap">
+        <text>确认提交</text>
     </view>
 </view>

@@ -1,0 +1,77 @@
+/* pages/kpi/kpi.wxss */
+.kpi .header {
+    position: relative;
+    padding: 0 22rpx;
+    padding-top: 50rpx;
+    height: 450rpx;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff7300), to(#ffbc00));
+    color: #FFF;
+    text-align: center;
+}
+.kpi .header .bg {
+    width:480rpx;
+    height:279rpx;
+}
+.kpi .header .img {
+    position: absolute;
+    top: 75rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 126rpx;
+    height: 126rpx;
+}
+.kpi text{
+    display: block;
+}
+.kpi .header .explain {
+    margin-top: 20rpx;
+    font-size: 28rpx; 
+}
+.kpi .main {
+    padding-top: 10rpx;
+}
+.kpi .kpi-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:136rpx;
+    padding: 0 24rpx;
+    background: #FFF;
+    border-bottom: 1rpx solid #efeff4; 
+}
+.kpi .kpi-list image {
+    background:#9c9c9c;
+    border-radius:50%;
+    width:100rpx;
+    height:100rpx;
+}
+.kpi .kpi-content {
+    width: 396rpx;
+}
+.kpi .kpi-content text:nth-child(1){
+    font-size: 34rpx;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.kpi .kpi-content text:nth-child(2){
+    margin-top: 10rpx;
+    font-size:28rpx;
+    color:#888888;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.kpi .kpi-date {
+    text-align: right;
+}
+.kpi .kpi-date text:nth-child(1){
+    font-size: 24rpx;
+    color: #999;
+}
+.kpi .kpi-date text:nth-child(2){
+    margin-top: 10rpx;
+    font-size: 32rpx;
+    color:#f76b1c;
+}

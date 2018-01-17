@@ -1,0 +1,50 @@
+/* pages/identityCard/identityCard.wxss */
+.card {
+    padding-top: 30rpx;
+    text-align: center;
+}
+.card .title {
+    font-size:28rpx;
+    color:#666666;
+}
+.card .card-list {
+    margin: 0 auto;
+    margin-top: 45rpx;
+    position: relative;
+    width:437rpx;
+    height:275rpx;
+}
+.card .card-list .img {
+    width:437rpx;
+    height:275rpx;
+}
+.card .card-list .card-text {
+    position: absolute;
+    top: 40rpx;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.card .card-list .card-text image {
+    width: 120rpx;
+    height: 120rpx;
+}
+.card .card-list .card-text text {
+    display: block;
+}
+.title-bottom {
+    display: block;
+    margin: 17rpx 0;
+    font-size: 28rpx;
+}
+.submit {
+    position: absolute;
+    bottom: 0;
+    background:#ffffff;
+    width: 750rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 36rpx;
+    color: #f76b1c;
+    text-align: center;
+}

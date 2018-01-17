@@ -1,0 +1,12 @@
+<!--pages/avatar/avatar.wxml-->
+<view class="avatar-img">
+    <image src="{{imgUrl}}" />
+</view>
+<view>
+    <view class="choose-photo" bindtap="photo">
+        从相册里选/拍摄一张
+    </view>
+    <view class="submit-btn" bindtap="submit">
+        确定
+    </view>
+</view>

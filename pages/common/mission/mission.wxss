@@ -18,12 +18,10 @@
     font-size: 32rpx
 }
 .mission-name {
-    margin: 10rpx;
+    margin: 10rpx 0;
 }
 .main {
   padding-top: 10rpx;
-  min-height: 800rpx;
-  background: #efeff4;
 }
 .duty-list {
     display: flex;

@@ -1,0 +1,65 @@
+/* pages/ scoreDetails/ scoreDetails.wxss */
+.details .header {
+    padding-top: 28rpx;
+    text-align: center;
+    background: #FFF;
+    height:546rpx;
+}
+.details .header image {
+    width:260rpx;
+    height:260rpx;
+    border-radius:50%;
+}
+.details .header text {
+    display: block;
+    font-size: 42rpx;
+    color:#ff7300;
+}
+.details .header text:nth-child(2) {
+    margin-top: 39rpx;
+    color: #000;
+}
+.details .header text:nth-child(3){
+    margin-top: 20rpx;
+    font-size:28rpx;
+}
+.details .header text:nth-child(4){
+    margin-top: 10rpx;
+}
+.details .main {
+    padding-top: 10rpx;
+}
+.details .score-list {
+    padding: 0 22rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    height:136rpx;
+    border-bottom: 1rpx solid #efeff4;
+}
+.details .score-list text {
+    font-size: 32rpx;
+}
+.score-list .score {
+    color: #ff7300;
+}
+.details .remark {
+    margin-top: 10rpx;
+    display: flex;
+    padding: 46rpx 22rpx;
+    background: #FFF;
+}
+.details .remark text {
+    display: block;
+}
+.details .remark text:nth-child(1){
+    width: 20%;
+    font-size:34rpx;
+    color:#999999;
+}
+.details .remark text:nth-child(2){
+    width: 80%;
+    font-size:34rpx;
+    color:#4444;
+}

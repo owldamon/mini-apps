@@ -2,14 +2,14 @@
 <view class="mission">
     <view class="header" bindtap="goCalendar">
         <view class="mission-date">
-            <text>星期三</text>
-            <text>2017.12.20</text>
+            <text>{{week}}</text>
+            <text>{{date}}</text>
         </view>
         <view class="mission-name">
-            <text>京东中秋活动促销</text>
+            <text>{{title}}</text>
         </view>
         <view class="mission-time">
-            <text>14:00 - 16:00</text>
+            <text>{{time}}</text>
         </view>
     </view>
     <view class="main">
@@ -18,17 +18,17 @@
                 <image src="/images/icon/iocn-on-duty.png" />
                 <view class="duty-info">
                     <text>上班</text>
-                    <text>打卡时间：14:00</text>
+                    <text>{{up.time}}</text>
                 </view>
-                <text class="duty-state on">已打卡</text>
+                <text data-up="{{up}}" class="{{up.class}}" bindtap="clockIn">{{up.state}}</text>
             </view>
             <view class="duty-list">
                 <image src="/images/icon/icon-off-duty.png" />
                 <view class="duty-info">
                     <text>下班</text>
-                    <text>未打卡</text>
+                    <text>{{down.time}}</text>
                 </view>
-                <text class="duty-state">未打卡</text>
+                <text data-down="{{down}}" class="{{down.class}}" bindtap="clockIn">{{down.state}}</text>
             </view>
         </view>
         <view class="report" bindtap="goReport">

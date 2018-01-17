@@ -1,2 +1,27 @@
 <!--pages/common/message/message.wxml-->
-<text>pages/common/message/message.wxml</text>
+<view class="message">
+    <view class="message-list">
+        <image src="/images/logo.png" />
+        <view class="message-title">
+            <text>工作通知：广东圣火传媒股份</text>
+            <text>考勤打卡：14:00极速打卡 正常上班</text>
+        </view>
+        <text class="message-date">12:22</text>
+    </view>
+    <view class="message-list">
+        <image src="/images/logo.png" />
+        <view class="message-title">
+            <text>客服</text>
+            <text>有什么可以帮助您的呢</text>
+        </view>
+        <text class="message-date">昨天</text>
+    </view>
+    <view class="message-list" bindtap="into_chatRoom" wx:key="index" data-userName="{{item.name}}" wx:for="{{arr}}">
+        <image src="{{item.img}}" />
+        <view class="message-title">
+            <text>{{item.name}}</text>
+            <text>{{item.msg}}</text>
+        </view>
+        <text class="message-date">{{item.date}}</text>
+    </view>
+</view>

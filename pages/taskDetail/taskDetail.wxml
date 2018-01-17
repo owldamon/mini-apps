@@ -1,0 +1,62 @@
+<!--pages/taskDetail/taskDetail.wxml-->
+<view class="detail">
+    <image class="banner" src="{{imgUrl}}" />
+    <view class="generaInfo">
+        <view class="mission-head">
+            <text class="mission-title">{{title}}</text>
+            <text class="mission-time">{{createDate}}</text> 
+        </view>
+        <text class="mission-add">{{titleDisc}}</text>
+        <text class="mission-price">{{price}}</text>
+    </view>
+    <view class="company">
+        <image class="logo" src="{{companyLogo}}" />
+        <view class="companyInfo">
+            <text>{{companyName}}</text>
+            <text>公司地点：{{companyAddr}}</text>
+        </view>
+    </view>
+    <view class="mission-info">
+        <view class="title">
+            <image src="/images/icon/icon-mission-describe.png" />
+            <text>任务描述</text>
+        </view>
+        <view class="content">
+            <view class="content-title">
+                工作职责:
+            </view>
+            <view class="content-text">
+                {{taskDisc}}
+            </view>
+        </view>
+    </view>
+    <view class="mission-addr">
+        <view class="title">
+            <image style="height: 48rpx;"  src="/images/icon/icon-mission-addr.png" />
+            <text>工作地址</text>
+        </view>
+        <view class="content">
+            <view class="taskAddress">
+                {{taskAddress}}
+            </view>
+            <image src="/images/icon/icon-right.png" />
+        </view>
+    </view>
+    <view class="mission-num">
+        <view class="title">
+            <image src="/images/icon/icon-people.png" />
+            <text>所需人数</text>
+        </view>
+        <view class="content">
+            <text class="content-num">{{taskDemand}}</text>
+        </view>
+    </view>
+    <view class="bottom-btn">
+        <view class="apply-btm" bindtap="setApply">
+            申请任务
+        </view>
+        <view class="call-btn">
+            和TA聊聊
+        </view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/kpi/kpi.wxml-->
+<view class="kpi">
+    <view class="header">
+        <image class="bg" src="/images/kpi-bg.png" />
+        <image class="img" src="{{img}}" />
+        <text class="score">{{score}} 分</text>
+        <navigator url="/pages/scoreExplain/scoreExplain" class="explain">分数说明 ></navigator>
+    </view>
+    <view class="main">
+        <navigator class="kpi-list" wx:key="index" wx:for="{{kpiList}}" url="/pages/scoreDetails/scoreDetails?id={{item.url}}" open-type="navigate">
+        <image src="{{item.img}}" />
+            <view class="kpi-content">
+                <text>{{item.name}}</text>
+                <text>{{item.desc}}</text>
+            </view>
+            <view class="kpi-date">
+                <text>{{item.date}}</text>
+                <text>{{item.score}}</text>
+            </view>
+        </navigator>
+    </view>
+</view>

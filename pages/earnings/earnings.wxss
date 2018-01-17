@@ -1,0 +1,42 @@
+/* pages/earnings/earnings.wxss */
+.earn .header {
+    position: relative;
+    padding: 22rpx;
+    height: 260rpx;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff7300), to(#ffbc00));
+    color: #FFF;
+}
+.earn .money {
+    margin: 30rpx 0;
+    display: block;
+    font-size: 72rpx;
+}
+.main {
+    padding-top: 10rpx;
+    padding-bottom: 98rpx;
+}
+.nav-list {
+    display: flex;
+    padding: 0 22rpx;
+    height: 140rpx;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    border-bottom: 1px solid #efeff4;
+}
+.nav-list .logo {
+    border-radius:5rpx;
+    width:100rpx;
+    height:100rpx;   
+}
+.nav-list .name {
+    width: 75%;
+}
+.nav-list .name text {
+    font-size: 34rpx;
+}
+.nav-list .icon {
+    margin-right: 30rpx;
+    width: 16rpx;
+    height: 26rpx;
+}

@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.7.2",
-	"appid": "wxebbcaa7a7c68a925",
-	"projectname": "cpXCX",
+	"appid": "wx450f201399d9793b",
+	"projectname": "%E7%9D%A3%E5%AF%BC%E5%AE%A2%E6%88%B7%E7%AB%AF",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -25,13 +25,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": -1,
 			"list": [
 				{
 					"id": 0,
-					"name": "大厅",
-					"pathName": "pages/index/index",
-					"query": ""
+					"name": "详情",
+					"pathName": "pages/taskDetail/taskDetail",
+					"query": "id=2bbcdb32709547faa6b449a9f8c77bb3"
 				},
 				{
 					"id": -1,
@@ -42,7 +42,19 @@
 				{
 					"id": 2,
 					"name": "汇报",
-					"pathName": "pages/salesReport/salesReport",
+					"pathName": "pages/report/report",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "个人信息",
+					"pathName": "pages/identityCard/identityCard",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "聊天",
+					"pathName": "pages/identityCard/identityCard",
 					"query": ""
 				}
 			]

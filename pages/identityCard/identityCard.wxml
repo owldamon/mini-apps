@@ -1,0 +1,16 @@
+<!--pages/identityCard/identityCard.wxml-->
+<view class="card">
+    <text class="title">拍摄您的二代身份证原件，请确保图片清晰、四角完整</text>
+    <view class="card-list" id="{{index}}" wx:key="{{index}}" wx:for="{{cards}}" bindtap="updataCard">
+        <image class="img" src="{{item.img}}" />
+        <view class="card-text">
+            <image src="/images/icon/icon-camera.png" />
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+    <text class="title-bottom">信息仅用于身份验证</text>
+    <view class="submit" bindtap="submitCard">
+        确定
+    </view>
+</view>
+

@@ -1,0 +1,23 @@
+<!--pages/scoreExplain/scoreExplain.wxml-->
+<view class="explain">
+    <view class="header">
+        <image src="/images/explain-bg.png" />
+        <text>分数说明</text>
+        <text>最终解释权归我方开发者所有</text>
+    </view>
+    <view class="main">
+        <text class="title">如何打分</text>
+        <text>满分为100分</text>
+        <text>准时上下班打卡，系统自动默认100分，如未准时打卡系统自动默认60分。</text>
+        <text>其它分数均由督导根据现场情况与汇报情况进行打分，分数在 1 - 100 分之间。</text>
+        <text>一场活动所得的分数为：（准时打卡+服务态度+现场激情+商品陈列+形象外表）/5= 平均分数</text>
+        <text class="title">分数的影响</text>
+        <text>分数的高低将直接影响您的“就职几率”、“工资高低”、“发放工资时间”等。</text>
+        <text>分数在90-100之间的享受：</text>
+        <text>1.个人分数保持在90-100间，优先推送、优先入职服务   
+    （相比较入职率高达96%）</text>
+        <text>2.单场活动分数在90-100间将有机会获得额外奖金。</text>
+        <text> 3.个人分数保持在90-100间，发放工资时间为确定活</text>
+        <text>动完成后的7-10个工作日。</text>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/scoreExplain/scoreExplain.wxss */
+
+.explain .header {
+    position: relative;
+    width: 100%;
+    height: 515rpx;
+}
+
+.explain .header image {
+    width: 100%;
+    height: 100%;
+}
+
+.explain .header text {
+    position: absolute;
+    color: #FFF;
+    left: 22rpx;
+}
+
+.explain .header text:nth-child(2) {
+    bottom: 78rpx;
+    font-size: 52rpx;
+}
+
+.explain .header text:nth-child(3) {
+    bottom: 40rpx;
+    font-size: 20rpx;
+}
+.explain .main {
+    padding: 22rpx;
+    background: #FFF;
+}
+.explain .main text {
+    font-size: 28rpx;
+    color: #8c8c99;
+    display: block;
+}
+
+.explain .main .title {
+    margin: 20rpx 0;
+    font-size: 32rpx;
+    color: #000;
+}

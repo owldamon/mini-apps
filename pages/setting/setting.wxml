@@ -1,0 +1,60 @@
+<!--pages/setting/setting.wxml-->
+<view class="customForm user-center">
+    <view class="section user-info" bindtap="goSetAvatar">
+        <view class="name">
+            头像 
+        </view> 
+        <view class="img">
+            <image class="user-avatar" src="{{imgUrl}}" />
+            <image src="/images/icon/icon-right.png" />
+        </view>
+    </view>
+    <view class="section">
+        <view class="name">
+            姓名
+        </view> 
+        <input class="input" bindinput="inputName" name="name" placeholder="{{_nickName}}" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            联系电话 
+        </view> 
+        <input class="input" name="phone" bindinput="inputPhone" placeholder="{{_phone}}" placeholder-class="input-hold" />
+    </view>
+    <view class="section">
+        <view class="name">
+            性别 
+        </view> 
+        <view class="section-sex">
+            <view class="sex-list" wx:for="{{sex}}" wx:key="{{index}}" id="{{index}}" bindtap="selectSex">
+                <text class="{{item.class}}"></text>
+                <text>{{item.value}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{exp}}" range="{{array}}">
+            <view class="picker">
+                <view class="name">
+                    促销经验
+                </view>
+                <view class="img">
+                    {{array[exp]}}
+                    <image src="/images/icon/icon-right.png" />
+                </view>
+            </view>
+        </picker>
+    </view>
+    <view class="section user-info" bindtap="goSetIdentityCard">
+        <view class="name">
+            身份认证 
+        </view> 
+        <view class="img">
+            <text>未实名</text>
+            <image src="/images/icon/icon-right.png" />
+        </view>
+    </view>
+    <view class="submit-btn" bindtap="submitTap">
+        <text>确认提交</text>
+    </view>
+</view>

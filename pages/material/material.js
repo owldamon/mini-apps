@@ -5,14 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    array: ['京东中秋活动', '京东中秋活动', '京东中秋活动', '京东中秋活动'],
   },
-
+  bindDateChange(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindPickerChange(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  chooseImage(e) {
+    wx.chooseImage({
+      count: 3,
+      sourceType: true,
+      success(data) {
+        console.log(data);
+      }
+    })
+  },
+  submitTap(e) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**

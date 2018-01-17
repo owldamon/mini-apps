@@ -1,0 +1,20 @@
+<!--pages/bill/bill.wxml-->
+<view class="bill">
+    <view class="header">
+        <view class="{{item.class}}" id="{{index}}" wx:key="{{index}}" wx:for="{{type}}" bindtap="selectBill">
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+    <view class="main">
+        <view class="bill-list" wx:key="{{index}}" wx:for="{{billList}}">
+            <view class="bill-left">
+                <text class="type">{{item.name}}</text>
+                <text class="balance">余额：{{item.balance}}</text>
+            </view>
+            <view class="bill-right">
+                <text class="date">{{item.date}}</text>
+                <text>{{item.total}}</text>
+            </view>
+        </view>
+    </view>
+</view>

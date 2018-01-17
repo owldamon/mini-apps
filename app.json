@@ -8,12 +8,24 @@
     "pages/material/material",
     "pages/activityReport/activityReport",
     "pages/stepOut/stepOut",
-    "pages/checkReport/checkReport"
+    "pages/checkReport/checkReport",
+    "pages/taskDetail/taskDetail",
+    "pages/chatRoom/chatRoom",
+    "pages/earnings/earnings",
+    "pages/kpi/kpi",
+    "pages/complaint/complaint",
+    "pages/setting/setting",
+    "pages/avatar/avatar",
+    "pages/identityCard/identityCard",
+    "pages/bill/bill",
+    "pages/cash/cash",
+    "pages/scoreDetails/scoreDetails",
+    "pages/scoreExplain/scoreExplain"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff7300",
     "navigationBarTextStyle": "#ffffff",
-    "navigationBarTitleText": "我也不知道叫什么",
+    "navigationBarTitleText": "任务大厅",
     "backgroundColor": "#efeff4"
   },
   "debug": true

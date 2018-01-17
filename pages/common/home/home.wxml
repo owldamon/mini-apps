@@ -1,2 +1,18 @@
 <!--pages/common/home/home.wxml-->
-<text>pages/common/home/home.wxml</text>
+<view class="home">
+    <view class="header">
+        <image class="avatar" src="{{userImg}}" />
+        <image bindtap="goSetting" class="setting" src="/images/icon/icon-setting.png" />
+        <text class="name">{{userName}}</text>
+        <text class="location">{{location}}</text>
+    </view>
+    <view class="main">
+        <navigator class="nav-list" wx:key="index" wx:for="{{navList}}" url="{{item.url}}" open-type="navigate">
+            <image class="logo" src="{{item.icon}}" />
+            <view class="name">
+                <text>{{item.name}}</text>
+            </view>
+            <image class="icon" src="/images/icon/icon-right.png" />
+    </navigator>
+    </view>
+</view>

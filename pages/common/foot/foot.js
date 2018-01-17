@@ -49,6 +49,11 @@ Component({
       let activeNavId = { // detail对象，提供给事件监听函数
         activeNavId: id
       };
+      wx.setNavigationBarTitle(
+        {
+          title: event.currentTarget.dataset.name
+        }
+      )
       this.triggerEvent('changeNav', activeNavId);
     },
     renderNavState(_index=0){
@@ -61,11 +66,6 @@ Component({
       this.setData({
         navList: this.data.navList
       })
-    },
-    onTap: function(){
-      var myEventDetail = {} // detail对象，提供给事件监听函数
-      var myEventOption = {} // 触发事件的选项
-      this.triggerEvent('myevent', myEventDetail, myEventOption)
     }
   },
   /**

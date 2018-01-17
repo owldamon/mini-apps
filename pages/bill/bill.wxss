@@ -1,0 +1,49 @@
+/* pages/bill/bill.wxss */
+.bill .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:94rpx;
+    background: #FFF;
+}
+.bill .header .type-list {
+    display: block;
+    width: 33%;
+    text-align: center;
+    color: #f76b1c;
+    font-size: 28rpx;
+    border-left: 1rpx solid #f76b1c; 
+}
+.bill .header .type-list text {
+    padding-bottom: 15rpx;
+}
+.bill .header .on text {
+    border-bottom: 4rpx solid #f76b1c;
+}
+.bill .header .type-list:nth-child(1) {
+    border: 0;
+}
+.bill-list {
+    padding: 0 22rpx; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:136rpx;
+    background: #FFF;
+    border-top: 1rpx solid #efeff4;
+}
+.bill-list .type {
+    display: block;
+    font-size: 34rpx;
+}
+.bill-list .balance {
+    font-size: 28rpx;
+}
+.bill-list .bill-right {
+    text-align: right;
+}
+.bill-list .date {
+    display: block;
+    font-size:24rpx;
+    color:#999999;
+}

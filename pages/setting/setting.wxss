@@ -1,0 +1,57 @@
+/* pages/setting/setting.wxss */
+.user-center .section{
+    justify-content: space-between;
+    align-items: center;
+}
+.user-center .section .user-avatar {
+    width: 98rpx;
+    height: 98rpx;
+    border: 1rpx solid #979797;
+    border-radius: 50%; 
+    margin-right: 20rpx;
+}
+.user-center .section image {
+    vertical-align: middle;
+}
+.user-center .section input {
+    text-align: right;
+    width: auto;
+    padding-right: 36rpx;
+}
+.user-center .picker {
+    justify-content: space-between;
+}
+.user-center .img {
+    font-size: 28rpx;
+}
+.user-center .img text {
+    margin-right: 20rpx;
+    padding: 5rpx;
+    width:88rpx;
+    height:32rpx;
+    font-size: 24rpx;
+    border: 1rpx solid #979797;
+    border-radius: 10rpx;
+    color: #979797;
+}
+.user-center .section-sex {
+    display: flex;
+    justify-content: space-between;
+}
+.user-center .sex-list {
+    display: flex;
+    align-items: center;
+    width: 100rpx;
+    height: 100%;
+}
+.user-center .sex-icon {
+    display: block;
+    margin-right: 10rpx;
+    width: 27rpx;
+    height: 27rpx;
+    border-radius: 50%;
+    border: 1rpx solid #979797;
+}
+.user-center .on {
+    background: #ff5c00;
+}
